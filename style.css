@@ -1,15 +1,15 @@
-        /* === VARIÁVEIS DE CORES E TAMANHOS (Foco em Acessibilidade) === */
+        /* --- CONFIGURAÇÕES DE ACESSIBILIDADE E VARIÁVEIS --- */
         :root {
-            --cor-fundo: #F0F4F8; /* Azul muito claro, descansa a vista */
-            --cor-texto: #1A202C; /* Quase preto para alto contraste */
-            --cor-primaria: #2B6CB0; /* Azul forte para títulos */
+            --cor-fundo: #F0F4F8; 
+            --cor-texto: #1A202C; 
+            --cor-primaria: #2B6CB0; 
             --cor-botao: #3182CE;
-            --cor-alerta: #E53E3E; /* Vermelho forte para emergência */
+            --cor-alerta: #E53E3E; 
             --cor-branco: #FFFFFF;
-            --tamanho-fonte-base: 22px; /* Fonte bem grande para facilitar a leitura */
+            --tamanho-fonte-base: 22px; 
         }
 
-        /* === ESTILOS GERAIS === */
+        /* --- ESTILOS GERAIS DA PÁGINA --- */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -22,9 +22,10 @@
             color: var(--cor-texto);
             font-size: var(--tamanho-fonte-base);
             line-height: 1.6;
-            padding-bottom: 120px; /* Espaço para o botão de emergência flutuante não cobrir o texto */
+            padding-bottom: 120px; 
         }
 
+        /* --- TOPO DA PÁGINA (HEADER) --- */
         header {
             background-color: var(--cor-primaria);
             color: var(--cor-branco);
@@ -43,13 +44,14 @@
             opacity: 0.9;
         }
 
+        /* --- ÁREA PRINCIPAL --- */
         main {
             padding: 20px;
             max-width: 800px;
             margin: 0 auto;
         }
 
-        /* === DICAS DE SEGURANÇA (CARDS) === */
+        /* --- CARDS DE DICAS --- */
         .dica-card {
             background-color: var(--cor-branco);
             border: 3px solid #CBD5E0;
@@ -80,7 +82,7 @@
             margin-bottom: 10px;
         }
 
-        /* === BOTÃO DE EMERGÊNCIA FLUTUANTE === */
+        /* --- BOTÃO DE EMERGÊNCIA FLUTUANTE --- */
         .btn-emergencia-flutuante {
             position: fixed;
             bottom: 20px;
@@ -106,22 +108,20 @@
             transform: translateX(-50%) scale(0.95);
         }
 
-        /* === MODAL DE EMERGÊNCIA (USANDO APENAS CSS) === */
+        /* --- MODAL DE EMERGÊNCIA --- */
         .modal {
-            /* Esconde o modal por padrão */
             display: none; 
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.85); /* Fundo bem escuro para focar no modal */
+            background-color: rgba(0, 0, 0, 0.85); 
             z-index: 1000;
             justify-content: center;
             align-items: center;
         }
 
-        /* O TRUQUE: Quando a âncora (#modal-emergencia) for ativada, muda o display para flex */
         .modal:target {
             display: flex;
         }
@@ -142,6 +142,7 @@
             margin-bottom: 20px;
         }
 
+        /* --- BOTÕES DENTRO DO MODAL --- */
         .btn-modal {
             display: block;
             width: 100%;
@@ -156,7 +157,7 @@
         }
 
         .btn-policia {
-            background-color: #2D3748; /* Cinza escuro quase preto */
+            background-color: #2D3748; 
             border: 3px solid #1A202C;
         }
 
@@ -178,7 +179,7 @@
             border-radius: 10px;
         }
 
-        /* Melhorias para Leitores de Tela (Acessibilidade) */
+        /* --- ACESSIBILIDADE PARA LEITORES DE TELA --- */
         .sr-only {
             position: absolute;
             width: 1px;

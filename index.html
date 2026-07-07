@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Segurança Digital para a Melhor Idade</title>
-    </head>
-<body>
+</head>
+    <body>
 
+    <!-- TOPO -->
     <header>
         <h1>Guia de Segurança Digital</h1>
         <p class="subtitulo">Dicas simples para você navegar com segurança.</p>
     </header>
 
+    <!-- CONTEÚDO PRINCIPAL (DICAS) -->
     <main>
-        <!-- DICA 1 -->
+        <!-- DICA 1: WHATSAPP -->
         <article class="dica-card">
             <h2>⚠️ Golpes no WhatsApp</h2>
             <p>Os bandidos costumam se passar por filhos ou netos pedindo dinheiro emprestado ou para pagar contas.</p>
@@ -23,7 +25,7 @@
             </ul>
         </article>
 
-        <!-- DICA 2 -->
+        <!-- DICA 2: SENHAS -->
         <article class="dica-card">
             <h2>🔒 Suas Senhas</h2>
             <p>A sua senha é a chave da sua casa na internet. Ela precisa ser forte e secreta.</p>
@@ -34,7 +36,7 @@
             </ul>
         </article>
 
-        <!-- DICA 3 -->
+        <!-- DICA 3: LINKS -->
         <article class="dica-card">
             <h2>🔗 Cuidado com Links Falsos</h2>
             <p>Recebeu uma mensagem dizendo que você ganhou um prêmio, que seu nome está sujo ou que seu cartão foi bloqueado?</p>
@@ -46,28 +48,28 @@
         </article>
     </main>
 
-    <!-- BOTÃO FLUTUANTE QUE ABRE O MODAL (Usa href para apontar pro ID do modal) -->
+    <!-- BOTÃO FLUTUANTE DE EMERGÊNCIA -->
     <a href="#modal-emergencia" class="btn-emergencia-flutuante" aria-label="Abrir opções de emergência">
         🚨 PEDIR AJUDA AGORA
     </a>
 
-    <!-- O MODAL DE EMERGÊNCIA (Totalmente funcional apenas com CSS usando a pseudo-classe :target) -->
+    <!-- MODAL DE EMERGÊNCIA -->
     <div id="modal-emergencia" class="modal">
         <div class="modal-conteudo">
             <h2>Precisa de Ajuda?</h2>
             <p style="margin-bottom: 25px; font-size: 1.1em;">Selecione para quem você deseja ligar agora:</p>
             
-            <!-- Link para abrir o discador do celular com o número da polícia -->
+            <!-- Botão Polícia -->
             <a href="tel:190" class="btn-modal btn-policia">
                 🚓 Ligar para a Polícia (190)
             </a>
 
-            <!-- Link para abrir o discador com o contato de emergência (substitua os zeros pelo número real) -->
+            <!-- Botão Familiar -->
             <a href="tel:00000000000" class="btn-modal btn-contato">
                 ❤️ Ligar para Familiar
             </a>
 
-            <!-- Botão de Fechar: Redireciona para o topo da página (#), desativando o modal -->
+            <!-- Fechar Modal -->
             <a href="#" class="btn-fechar">
                 Cancelar e Fechar
             </a>
