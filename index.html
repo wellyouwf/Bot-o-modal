@@ -1,0 +1,78 @@
+!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança Digital para a Melhor Idade</title>
+    </head>
+<body>
+
+    <header>
+        <h1>Guia de Segurança Digital</h1>
+        <p class="subtitulo">Dicas simples para você navegar com segurança.</p>
+    </header>
+
+    <main>
+        <!-- DICA 1 -->
+        <article class="dica-card">
+            <h2>⚠️ Golpes no WhatsApp</h2>
+            <p>Os bandidos costumam se passar por filhos ou netos pedindo dinheiro emprestado ou para pagar contas.</p>
+            <ul>
+                <li><strong>Nunca</strong> faça transferências ou Pix sem antes ouvir a voz da pessoa.</li>
+                <li>Ligue para o número antigo do seu familiar para confirmar se ele realmente trocou de celular.</li>
+            </ul>
+        </article>
+
+        <!-- DICA 2 -->
+        <article class="dica-card">
+            <h2>🔒 Suas Senhas</h2>
+            <p>A sua senha é a chave da sua casa na internet. Ela precisa ser forte e secreta.</p>
+            <ul>
+                <li>Não use sua data de nascimento ou o nome dos seus filhos.</li>
+                <li>Se tiver dificuldade de lembrar, anote as senhas em um caderno de papel e guarde em uma gaveta segura na sua casa (nunca no bloco de notas do celular).</li>
+                <li>Nunca passe sua senha do banco para ninguém, nem mesmo para funcionários do banco.</li>
+            </ul>
+        </article>
+
+        <!-- DICA 3 -->
+        <article class="dica-card">
+            <h2>🔗 Cuidado com Links Falsos</h2>
+            <p>Recebeu uma mensagem dizendo que você ganhou um prêmio, que seu nome está sujo ou que seu cartão foi bloqueado?</p>
+            <ul>
+                <li><strong>Não clique nas letrinhas azuis (links).</strong></li>
+                <li>Bancos de verdade não mandam links por SMS para você atualizar seus dados.</li>
+                <li>Na dúvida, feche a mensagem e ligue diretamente para o número que está no verso do seu cartão do banco.</li>
+            </ul>
+        </article>
+    </main>
+
+    <!-- BOTÃO FLUTUANTE QUE ABRE O MODAL (Usa href para apontar pro ID do modal) -->
+    <a href="#modal-emergencia" class="btn-emergencia-flutuante" aria-label="Abrir opções de emergência">
+        🚨 PEDIR AJUDA AGORA
+    </a>
+
+    <!-- O MODAL DE EMERGÊNCIA (Totalmente funcional apenas com CSS usando a pseudo-classe :target) -->
+    <div id="modal-emergencia" class="modal">
+        <div class="modal-conteudo">
+            <h2>Precisa de Ajuda?</h2>
+            <p style="margin-bottom: 25px; font-size: 1.1em;">Selecione para quem você deseja ligar agora:</p>
+            
+            <!-- Link para abrir o discador do celular com o número da polícia -->
+            <a href="tel:190" class="btn-modal btn-policia">
+                🚓 Ligar para a Polícia (190)
+            </a>
+
+            <!-- Link para abrir o discador com o contato de emergência (substitua os zeros pelo número real) -->
+            <a href="tel:00000000000" class="btn-modal btn-contato">
+                ❤️ Ligar para Familiar
+            </a>
+
+            <!-- Botão de Fechar: Redireciona para o topo da página (#), desativando o modal -->
+            <a href="#" class="btn-fechar">
+                Cancelar e Fechar
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
