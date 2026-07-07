@@ -1,4 +1,5 @@
-        /* === VARIÁVEIS DE CORES E TAMANHOS (Foco em Acessibilidade) === */
+       <style>
+       /* === VARIÁVEIS DE CORES E TAMANHOS (Foco em Acessibilidade) === */
         :root {
             --cor-fundo: #F0F4F8; /* Azul muito claro, descansa a vista */
             --cor-texto: #1A202C; /* Quase preto para alto contraste */
@@ -190,5 +191,5 @@
             white-space: nowrap;
             border-width: 0;
         }
-
+</style>
    
